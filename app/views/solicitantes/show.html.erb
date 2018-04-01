@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Login unal:</strong>
+  <%= @solicitante.login_unal %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @solicitante.nombre %>
+</p>
+
+<p>
+  <strong>Cargo:</strong>
+  <%= @solicitante.cargo %>
+</p>
+
+<p>
+  <strong>Dependencia:</strong>
+  <%= @solicitante.dependencia %>
+</p>
+
+<p>
+  <strong>Num contacto:</strong>
+  <%= @solicitante.num_contacto %>
+</p>
+
+<%= link_to 'Edit', edit_solicitante_path(@solicitante) %> |
+<%= link_to 'Back', solicitantes_path %>

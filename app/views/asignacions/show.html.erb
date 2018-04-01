@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo asigancion:</strong>
+  <%= @asignacion.codigo_asigancion %>
+</p>
+
+<p>
+  <strong>Nombre solicitante:</strong>
+  <%= @asignacion.nombre_solicitante %>
+</p>
+
+<p>
+  <strong>Nombre responsable:</strong>
+  <%= @asignacion.nombre_responsable %>
+</p>
+
+<p>
+  <strong>Lugar:</strong>
+  <%= @asignacion.lugar %>
+</p>
+
+<p>
+  <strong>Tarea:</strong>
+  <%= @asignacion.tarea %>
+</p>
+
+<%= link_to 'Edit', edit_asignacion_path(@asignacion) %> |
+<%= link_to 'Back', asignacions_path %>

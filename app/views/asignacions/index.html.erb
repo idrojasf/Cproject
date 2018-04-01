@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Asignacions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo asigancion</th>
+      <th>Nombre solicitante</th>
+      <th>Nombre responsable</th>
+      <th>Lugar</th>
+      <th>Tarea</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @asignacions.each do |asignacion| %>
+      <tr>
+        <td><%= asignacion.codigo_asigancion %></td>
+        <td><%= asignacion.nombre_solicitante %></td>
+        <td><%= asignacion.nombre_responsable %></td>
+        <td><%= asignacion.lugar %></td>
+        <td><%= asignacion.tarea %></td>
+        <td><%= link_to 'Show', asignacion %></td>
+        <td><%= link_to 'Edit', edit_asignacion_path(asignacion) %></td>
+        <td><%= link_to 'Destroy', asignacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Asignacion', new_asignacion_path %>

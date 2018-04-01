@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Solicitantes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Login unal</th>
+      <th>Nombre</th>
+      <th>Cargo</th>
+      <th>Dependencia</th>
+      <th>Num contacto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @solicitantes.each do |solicitante| %>
+      <tr>
+        <td><%= solicitante.login_unal %></td>
+        <td><%= solicitante.nombre %></td>
+        <td><%= solicitante.cargo %></td>
+        <td><%= solicitante.dependencia %></td>
+        <td><%= solicitante.num_contacto %></td>
+        <td><%= link_to 'Show', solicitante %></td>
+        <td><%= link_to 'Edit', edit_solicitante_path(solicitante) %></td>
+        <td><%= link_to 'Destroy', solicitante, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Solicitante', new_solicitante_path %>

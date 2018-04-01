@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Num servicio:</strong>
+  <%= @evaluacion.num_servicio %>
+</p>
+
+<p>
+  <strong>Login unal:</strong>
+  <%= @evaluacion.login_unal %>
+</p>
+
+<p>
+  <strong>Calificacion:</strong>
+  <%= @evaluacion.calificacion %>
+</p>
+
+<p>
+  <strong>Responsable:</strong>
+  <%= @evaluacion.responsable %>
+</p>
+
+<p>
+  <strong>Calificador:</strong>
+  <%= @evaluacion.calificador %>
+</p>
+
+<%= link_to 'Edit', edit_evaluacion_path(@evaluacion) %> |
+<%= link_to 'Back', evaluacions_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo_solicitud: 1
+  tipo: MyString
+  urgencia: MyString
+  oficina: MyString
+  solicitante: MyString
+
+two:
+  codigo_solicitud: 1
+  tipo: MyString
+  urgencia: MyString
+  oficina: MyString
+  solicitante: MyString

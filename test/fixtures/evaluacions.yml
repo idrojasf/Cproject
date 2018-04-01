@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num_servicio: 1
+  login_unal: MyString
+  calificacion: MyString
+  responsable: MyString
+  calificador: MyString
+
+two:
+  num_servicio: 1
+  login_unal: MyString
+  calificacion: MyString
+  responsable: MyString
+  calificador: MyString

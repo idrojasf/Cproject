@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo_asigancion: 1
+  nombre_solicitante: MyString
+  nombre_responsable: MyString
+  lugar: MyString
+  tarea: MyString
+
+two:
+  codigo_asigancion: 1
+  nombre_solicitante: MyString
+  nombre_responsable: MyString
+  lugar: MyString
+  tarea: MyString

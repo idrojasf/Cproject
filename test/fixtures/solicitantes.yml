@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  login_unal: MyString
+  nombre: MyString
+  cargo: MyString
+  dependencia: MyString
+  num_contacto: 1
+
+two:
+  login_unal: MyString
+  nombre: MyString
+  cargo: MyString
+  dependencia: MyString
+  num_contacto: 1

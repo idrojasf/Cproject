@@ -1,0 +1,42 @@
+<%= form_with(model: evaluacion, local: true) do |form| %>
+  <% if evaluacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(evaluacion.errors.count, "error") %> prohibited this evaluacion from being saved:</h2>
+
+      <ul>
+      <% evaluacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :num_servicio %>
+    <%= form.number_field :num_servicio, id: :evaluacion_num_servicio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :login_unal %>
+    <%= form.text_field :login_unal, id: :evaluacion_login_unal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :calificacion %>
+    <%= form.text_field :calificacion, id: :evaluacion_calificacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :responsable %>
+    <%= form.text_field :responsable, id: :evaluacion_responsable %>
+  </div>
+
+  <div class="field">
+    <%= form.label :calificador %>
+    <%= form.text_field :calificador, id: :evaluacion_calificador %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

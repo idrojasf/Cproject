@@ -1,0 +1,42 @@
+<%= form_with(model: solicitud, local: true) do |form| %>
+  <% if solicitud.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(solicitud.errors.count, "error") %> prohibited this solicitud from being saved:</h2>
+
+      <ul>
+      <% solicitud.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :codigo_solicitud %>
+    <%= form.number_field :codigo_solicitud, id: :solicitud_codigo_solicitud %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo, id: :solicitud_tipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :urgencia %>
+    <%= form.text_field :urgencia, id: :solicitud_urgencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oficina %>
+    <%= form.text_field :oficina, id: :solicitud_oficina %>
+  </div>
+
+  <div class="field">
+    <%= form.label :solicitante %>
+    <%= form.text_field :solicitante, id: :solicitud_solicitante %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
