@@ -1,3 +1,3 @@
 class Evaluacion < ApplicationRecord
-  belong_to :solicitante
+  belongs_to :solicitante
 end

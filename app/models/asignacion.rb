@@ -1,5 +1,5 @@
 class Asignacion < ApplicationRecord
-	belong_to :responsable
-	belong_to :solicitante
+	belongs_to :responsable
+	belongs_to :solicitante
 	has_one :solicitud
 end
